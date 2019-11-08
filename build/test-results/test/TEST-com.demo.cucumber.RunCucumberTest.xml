@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.cucumber.RunCucumberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-08T17:25:31" hostname="LAP-0000697BR" time="0.029">
+  <properties/>
+  <testcase name="Today is or is not Friday" classname="com.demo.cucumber.RunCucumberTest" time="0.019"/>
+  <testcase name="Today is or is not Friday" classname="com.demo.cucumber.RunCucumberTest" time="0.002"/>
+  <testcase name="Today is or is not Friday" classname="com.demo.cucumber.RunCucumberTest" time="0.006"/>
+  <system-out><![CDATA[Feature: Is it Friday yet?
+  Everybody wants to know when it's Friday
+
+  Scenario Outline: Today is or is not Friday ?[90m# src/test/resources/democucumber/is_it_friday_yet.feature:4?[0m
+    ?[36mGiven today is "<day>"?[0m
+    ?[36mWhen I ask whether it's Friday yet?[0m
+    ?[36mThen I should be told "<answer>"?[0m
+
+    Examples: 
+
+  Scenario Outline: Today is or is not Friday ?[90m# src/test/resources/democucumber/is_it_friday_yet.feature:11?[0m
+    ?[32mGiven ?[0m?[32mtoday is ?[0m?[32m?[1m"Friday"?[0m                   ?[90m# Stepdefs.today_is(String)?[0m
+    ?[32mWhen ?[0m?[32mI ask whether it's Friday yet?[0m        ?[90m# Stepdefs.i_ask_whether_it_s_Friday_yet()?[0m
+    ?[32mThen ?[0m?[32mI should be told ?[0m?[32m?[1m"TGIF"?[0m              ?[90m# Stepdefs.i_should_be_told(String)?[0m
+
+  Scenario Outline: Today is or is not Friday ?[90m# src/test/resources/democucumber/is_it_friday_yet.feature:12?[0m
+    ?[32mGiven ?[0m?[32mtoday is ?[0m?[32m?[1m"Sunday"?[0m                   ?[90m# Stepdefs.today_is(String)?[0m
+    ?[32mWhen ?[0m?[32mI ask whether it's Friday yet?[0m        ?[90m# Stepdefs.i_ask_whether_it_s_Friday_yet()?[0m
+    ?[32mThen ?[0m?[32mI should be told ?[0m?[32m?[1m"Nope"?[0m              ?[90m# Stepdefs.i_should_be_told(String)?[0m
+
+  Scenario Outline: Today is or is not Friday ?[90m# src/test/resources/democucumber/is_it_friday_yet.feature:13?[0m
+    ?[32mGiven ?[0m?[32mtoday is ?[0m?[32m?[1m"anything else!"?[0m           ?[90m# Stepdefs.today_is(String)?[0m
+    ?[32mWhen ?[0m?[32mI ask whether it's Friday yet?[0m        ?[90m# Stepdefs.i_ask_whether_it_s_Friday_yet()?[0m
+    ?[32mThen ?[0m?[32mI should be told ?[0m?[32m?[1m"Nope"?[0m              ?[90m# Stepdefs.i_should_be_told(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
